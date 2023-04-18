@@ -1,0 +1,54 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h1>Address Form</h1>
+  <div>
+    <label
+      >Name:
+      <input type="text" id="name" formControlName="name" />
+    </label>
+  </div>
+  <div>
+    <label
+      >Address:
+      <textarea name="address" id="address" formControlName="address" ></textarea>
+    </label>
+  </div>
+  <div>
+    <label
+      >Zipcode:
+      <input type="text" id="zipcode" formControlName="zipcode"  />
+    </label>
+  </div>
+  <div>
+    <label
+      >State:
+      <input type="text" id="state" formControlName="state" />
+    </label>
+  </div>
+  <div>
+    <label
+      >Country:
+      <select id="country" formControlName="country" >
+        <option value="">--Please select a country--</option>
+        <option value="India">India</option>
+        <option value="England">England</option>
+        <option value="Singapore">Singapore</option>
+        <option value="USA">USA</option>
+      </select>
+    </label>
+  </div>
+  <div>
+    <label
+      >Phone:
+      <input type="text" id="phone" formControlName="phone" />
+    </label>
+  </div>
+  <div>
+    <label
+      >Email:
+      <input type="email" id="email" formControlName="email" />
+    </label>
+  </div>
+  <div>
+    <button [disabled]="!form.valid">submit</button>
+  </div>
+</form>

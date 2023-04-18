@@ -1,0 +1,11 @@
+<app-address-form (formSubmit)="onFormSubmit($event)"></app-address-form>
+<div>
+  <h2>Address Details:</h2>
+  <p><strong>Name:</strong> {{ formData?.name }}</p>
+  <p><strong>Address:</strong> {{ formData?.address }}</p>
+  <p><strong>Zipcode:</strong> {{ formData?.zipcode }}</p>
+  <p><strong>State:</strong> {{ formData?.state }}</p>
+  <p><strong>Country:</strong> {{ formData?.country }}</p>
+  <p><strong>Phone:</strong> {{ formData?.phone }}</p>
+  <p><strong>Email:</strong> {{ formData?.email }}</p>
+</div>
